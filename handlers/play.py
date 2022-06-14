@@ -13,7 +13,7 @@ import youtube_dl
 from youtube_search import YoutubeSearch
 import converter
 from downloaders import youtube
-from config import DURATION_LIMIT, UPDATES_CHANNEL, BOT_USERNAME, THUMB_IMG 
+from config import DURATION_LIMIT, UPDATES_CHANNEL, BOT_USERNAME, THUMB_IMG, ASSISTANT_NAME
 from helpers.filters import command
 from helpers.decorators import errors
 from helpers.errors import DurationLimitError
