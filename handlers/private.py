@@ -128,7 +128,11 @@ async def cbstart(_, query: CallbackQuery):
                     InlineKeyboardButton(
                         "🧑🏻‍💻 ɢɪᴛʜᴜʙ ᴋᴀʏɴᴀᴋ ᴋᴏᴅᴜ 🧑🏻‍💻", url="https://github.com/MehmetAtes21/music"
                     )
+                ]
 
+           ]
+        ),
+    )
 
 @Client.on_message(filters.command("help") & ~filters.private & ~filters.channel)
 async def ghelp(_, message: Message):
