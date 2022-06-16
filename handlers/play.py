@@ -226,10 +226,10 @@ async def play(_, message: Message):
     else:
         if len(message.command) < 2:
             return await lel.edit("•> **Dinlemek istediğin şarkı nedir ?**")
-        await lel.edit(""**•>🔎 **Lütfen bekleyiniz...**")
+        await lel.edit("•>🔎 **Lütfen bekleyiniz...**")
         query = message.text.split(None, 1)[1]
         # print(query)
-        await lel.edit("•> **Ses İşleniyor...**")
+        await lel.edit("**•> **Ses İşleniyor...**")
         try:
             results = YoutubeSearch(query, max_results=1).to_dict()
             url = f"https://youtube.com{results[0]['url_suffix']}"
