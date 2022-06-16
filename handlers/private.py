@@ -67,7 +67,7 @@ async def start(_, message: Message):
                 ],
                 [
                     InlineKeyboardButton(
-                        "📚 𝖪𝗈𝗆𝗎𝗍𝗅𝖺𝗋" , callback_data= "admin"
+                        "📚 𝖪𝗈𝗆𝗎𝗍𝗅𝖺𝗋", callback_data= "admin"
                     ),
                     InlineKeyboardButton(
                         "🇹🇷 𝖢𝗁𝖺𝗇𝗇𝖾𝗅", url="https://t.me/StarBotKanal"
@@ -98,12 +98,12 @@ async def admin(_, query: CallbackQuery):
                  ],
                  [
                      InlineKeyboardButton(
-                         "✍🏻 𝖲𝖺𝗁𝗂𝗉 𝖪𝗈𝗆𝗎𝗍𝗅𝖺𝗋𝗂",callback_data ="sudo"
+                         "✍🏻 𝖲𝖺𝗁𝗂𝗉 𝖪𝗈𝗆𝗎𝗍𝗅𝖺𝗋𝗂", callback_data ="sudo"
                      )
                  ],
                  [
                      InlineKeyboardButton(
-                         "⬅️ 𝖦𝖾𝗋𝗂 ⬅️",callback_data ="cstart")
+                         "⬅️ 𝖦𝖾𝗋𝗂 ⬅️", callback_data ="cstart")
                  ] 
              ]
          )
@@ -118,7 +118,7 @@ async def sudo(_, query: CallbackQuery):
              [
                  [
                      InlineKeyboardButton(
-                         "⬅️ 𝖦𝖾𝗋𝗂 ⬅️",callback_data ="admin")
+                         "⬅️ 𝖦𝖾𝗋𝗂 ⬅️", callback_data ="admin")
                  ] 
              ]
          )
@@ -137,7 +137,7 @@ async def cbstart(_, query: CallbackQuery):
                 ],
                 [
                     InlineKeyboardButton(
-                        "📚 𝖪𝗈𝗆𝗎𝗍𝗅𝖺𝗋" , callback_data= "admin"
+                        "📚 𝖪𝗈𝗆𝗎𝗍𝗅𝖺𝗋", callback_data= "admin"
                     ),
                     InlineKeyboardButton(
                         "🇹🇷 𝖢𝗁𝖺𝗇𝗇𝖾𝗅", url=f"https://t.me/StarBotKanal"
