@@ -57,7 +57,7 @@ async def _human_time_duration(seconds):
 async def start(_, message: Message):
                 await message.reply_photo(
                 f"{START_IMAGE}",
-                caption=(f"""● **𝖬𝖾𝗋𝗁𝖺𝖻𝖺 {message.from_user.mention} 🎵\n● **𝖡𝖾𝗇** {BOT_NAME}!\n\n● **𝖲𝖾𝗌𝗅𝗂 𝖲𝗈𝗁𝖻𝖾𝗍𝗅𝖾𝗋𝖽𝖾 müzik 𝖢𝖺𝗅𝖺𝖻𝗂𝗅𝖾𝗇 𝖡𝗈𝗍𝗎𝗆 . . !** \n\n● **𝖡𝖺𝗇 𝖸𝖾𝗍𝗄𝗂𝗌𝗂𝗓, 𝖲𝖾𝗌 𝖸𝗈𝗇𝖾𝗍𝗂𝗆 𝖸𝖾𝗍𝗄𝗂𝗌𝗂 𝗏𝖾𝗋𝗂𝗉 𝖠𝗌𝗂𝗌𝗍𝖺𝗇𝗂 𝖦𝗋𝗎𝖻𝖺 𝖤𝗄𝗅𝖾𝗒𝗂𝗇 . . !"""),
+                caption=(f"""● **𝖬𝖾𝗋𝗁𝖺𝖻𝖺** {message.from_user.mention} \n\n● **𝖡𝖾𝗇** {BOT_NAME}!\n\n● **𝖲𝖾𝗌𝗅𝗂 𝖲𝗈𝗁𝖻𝖾𝗍𝗅𝖾𝗋𝖽𝖾 müzik 𝖢𝖺𝗅𝖺𝖻𝗂𝗅𝖾𝗇 𝖡𝗈𝗍𝗎𝗆 . . !** \n\n● **𝖡𝖺𝗇 𝖸𝖾𝗍𝗄𝗂𝗌𝗂𝗓, 𝖲𝖾𝗌 𝖸𝗈𝗇𝖾𝗍𝗂𝗆 𝖸𝖾𝗍𝗄𝗂𝗌𝗂 𝗏𝖾𝗋𝗂𝗉 𝖠𝗌𝗂𝗌𝗍𝖺𝗇𝗂 𝖦𝗋𝗎𝖻𝖺 𝖤𝗄𝗅𝖾𝗒𝗂𝗇 . . !**"""),
          reply_markup=InlineKeyboardMarkup(
             [
                 [
@@ -90,10 +90,10 @@ async def admin(_, query: CallbackQuery):
              [
                  [
                      InlineKeyboardButton(
-                         "🇹🇷 𝖠𝗌𝗂𝗌𝗍𝖺𝗇", url="https://t.me/{ASSISTANT_NAME}"
+                         "🇹🇷 𝖠𝗌𝗂𝗌𝗍𝖺𝗇", url="https://t.me/StarMuzikAsistan"
                      ),
                      InlineKeyboardButton(
-                         "🧑🏻‍💻 𝖮𝗐𝗇𝖾𝗋", url="https://t.me/{OWNER_NAME}"
+                         "🧑🏻‍💻 𝖮𝗐𝗇𝖾𝗋", url="https://t.me/Hayiboo"
                      )
                  ],
                  [
@@ -103,7 +103,7 @@ async def admin(_, query: CallbackQuery):
                  ],
                  [
                      InlineKeyboardButton(
-                         "⬅️ 𝖦𝖾𝗋𝗂 ⬅️", callback_data="cbstart")
+                         "⬅️ 𝖦𝖾𝗋𝗂 ⬅️",callback_data ="cstart")
                  ] 
              ]
          )
@@ -118,14 +118,14 @@ async def sudo(_, query: CallbackQuery):
              [
                  [
                      InlineKeyboardButton(
-                         "⬅️ 𝖦𝖾𝗋𝗂 ⬅️", callback_data="admin")
+                         "⬅️ 𝖦𝖾𝗋𝗂 ⬅️",callback_data ="admin")
                  ] 
              ]
          )
          )
 
 
-@Client.on_callback_query(filters.regex("cbstart"))
+@Client.on_callback_query(filters.regex("cstart"))
 async def cbstart(_, query: CallbackQuery):
     await query.edit_message_text(f"""● **𝖬𝖾𝗋𝗁𝖺𝖻𝖺** {query.from_user.mention} \n\n● **𝖡𝖾𝗇** {bot} !\n\n● **𝖲𝖾𝗌𝗅𝗂 𝖲𝗈𝗁𝖻𝖾𝗍𝗅𝖾𝗋𝖽𝖾 müzik 𝖢𝖺𝗅𝖺𝖻𝗂𝗅𝖾𝗇 𝖡𝗈𝗍𝗎𝗆 . . !** \n\n● **𝖡𝖺𝗇 𝖸𝖾𝗍𝗄𝗂𝗌𝗂𝗓, 𝖲𝖾𝗌 𝖸𝗈𝗇𝖾𝗍𝗂𝗆 𝖸𝖾𝗍𝗄𝗂𝗌𝗂 𝗏𝖾𝗋𝗂𝗉 𝖠𝗌𝗂𝗌𝗍𝖺𝗇𝗂 𝖦𝗋𝗎𝖻𝖺 𝖤𝗄𝗅𝖾𝗒𝗂𝗇 . . !**""",
          reply_markup=InlineKeyboardMarkup(
