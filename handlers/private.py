@@ -103,7 +103,7 @@ async def admin(_, query: CallbackQuery):
                  ],
                  [
                      InlineKeyboardButton(
-                         "⬅️ 𝖦𝖾𝗋𝗂 ⬅️", callback_data ="start")
+                         "⬅️ 𝖦𝖾𝗋𝗂 ⬅️", callback_data ="cbstart")
                  ] 
              ]
          )
